@@ -12,8 +12,7 @@ function App() {
       <Quiz />
       <footer className="bg-green-600 text-white py-4 text-center mt-auto">
         <p className="text-sm text-gray-200">
-          Desenvolvido por Lucas Amaral, Pedro Novais, Pedro Carvalho, Victor
-          Jacques © 2024
+          Desenvolvido por Lucas Amaral, Pedro Novais, Pedro Carvalho, Victor Jacques © 2024
         </p>
       </footer>
     </div>
