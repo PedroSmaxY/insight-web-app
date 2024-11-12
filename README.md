@@ -23,6 +23,8 @@ This work was done for the Expert Systems course at college in the 4th semester.
       - [Online Quiz](#online-quiz)
       - [Offline Quiz](#offline-quiz)
     - [Results Page](#results-page)
+      - [Online Results](#online-results)
+      - [Offline Results](#offline-results)
   - [Technologies Used](#technologies-used)
   - [Prerequisites](#prerequisites)
   - [Getting Started](#getting-started)
@@ -42,23 +44,27 @@ This work was done for the Expert Systems course at college in the 4th semester.
 
 ### Intro Page
 
-![Intro Page](https://github.com/user-attachments/assets/9773bf97-5668-4361-9033-c0dbaf99c09d)
-
+![Intro Page](https://github.com/user-attachments/assets/eb493cb0-01a9-4e59-a09d-097c475f0b88)
 
 ### Quiz Page
 
 #### Online Quiz
 
-![Online Quiz Page](https://github.com/user-attachments/assets/117ed94a-3b19-417a-8bce-2c4d4adea8e1)
+![Online Quiz Page](https://github.com/user-attachments/assets/7a924bc2-3356-45b3-8f95-fc6c8d4592e0)
 
 #### Offline Quiz
 
-![Offline Quiz Page](https://github.com/user-attachments/assets/37ffecd4-1463-4e0c-996f-200861322c39)
+![Offline Quiz Page](https://github.com/user-attachments/assets/5520035c-a1ea-49f5-a552-ba520379a337)
 
 ### Results Page
 
-![Results Page](https://github.com/user-attachments/assets/323404bf-bba4-43f8-a31c-68a589d4880a)
+#### Online Results
 
+![Online Results](https://github.com/user-attachments/assets/6c67ac50-a4ac-488f-91e2-05d3e1222140)
+
+#### Offline Results
+
+![Offline Results](https://github.com/user-attachments/assets/ed2fd549-811a-47c4-acac-d155687e0a5b)
 
 ## Technologies Used
 
