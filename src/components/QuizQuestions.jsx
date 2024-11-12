@@ -41,6 +41,10 @@ const QuizQuestions = ({ onQuizComplete }) => {
   const [perfil, setPerfil] = useState("dominancia");
   const [useInternalQuestions, setUseInternalQuestions] = useState(false);
 
+  const totalQuestions = 20;
+  const answeredQuestions = answers.length + (selectedAnswer ? 1 : 0);
+  const progressPercentage = (answeredQuestions / totalQuestions) * 100;
+
   const fetchQuestion = useCallback(
     async (perfil, num) => {
       if (useInternalQuestions) {
@@ -147,6 +151,15 @@ const QuizQuestions = ({ onQuizComplete }) => {
           </p>
         </div>
       )}
+
+      {/* Barra de progresso */}
+      <div className="w-full bg-gray-200 rounded-full h-4 mb-4">
+        <div
+          className="bg-purple-600 h-full rounded-full"
+          style={{ width: `${progressPercentage}%` }}
+        ></div>
+      </div>
+
       <div className="mb-4">
         <p className="text-xl font-medium text-center">{question}</p>
       </div>
@@ -198,9 +211,11 @@ const QuizQuestions = ({ onQuizComplete }) => {
             selectedAnswer
               ? "bg-purple-600 hover:bg-purple-700"
               : "bg-gray-300 cursor-not-allowed"
+          } ${
+            answeredQuestions === 20 ? "bg-purple-700 hover:bg-purple-800" : ""
           }`}
         >
-          Próxima Pergunta
+          {answeredQuestions != 20 ? "Próxima Pergunta" : "Finalizar Quiz"}
         </button>
       </div>
     </div>
