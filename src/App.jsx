@@ -4,7 +4,9 @@ const App = () => {
   return (
     <div className="flex flex-col min-h-screen">
       <header className="bg-purple-500 text-white py-6 text-center">
-        <h1 className="text-3xl font-semibold">Quiz de Personalidade &#129504; &#10024;</h1>
+        <h1 className="text-3xl font-semibold">
+          Quiz de Personalidade &#129504;&#10024;
+        </h1>
         <p className="text-lg">
           Descubra mais sobre sua personalidade com este quiz de 5 minutos!
         </p>
@@ -18,6 +20,6 @@ const App = () => {
       </footer>
     </div>
   );
-}
+};
 
 export default App;
