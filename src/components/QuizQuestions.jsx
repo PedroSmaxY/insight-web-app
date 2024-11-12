@@ -143,8 +143,8 @@ const QuizQuestions = ({ onQuizComplete }) => {
               htmlFor={`option${value}`}
               className={`block p-4 rounded-lg cursor-pointer ${
                 selectedAnswer === value
-                  ? "bg-green-500 text-white"
-                  : "bg-gray-100 text-gray-700 hover:bg-green-100"
+                  ? "bg-purple-500 text-white"
+                  : "bg-gray-100 text-gray-700 hover:bg-purple-100"
               }`}
             >
               {
@@ -163,8 +163,10 @@ const QuizQuestions = ({ onQuizComplete }) => {
       <button
         onClick={handleNextQuestion}
         disabled={!selectedAnswer}
-        className={`w-full py-2 px-4 rounded-lg text-white hover:bg-green-700 ${
-          selectedAnswer ? "bg-green-600" : "bg-gray-300 cursor-not-allowed"
+        className={`w-full py-2 px-4 rounded-lg text-white  ${
+          selectedAnswer
+            ? "bg-purple-600 hover:bg-purple-700"
+            : "bg-gray-300 cursor-not-allowed"
         }`}
       >
         Próxima Pergunta

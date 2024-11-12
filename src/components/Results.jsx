@@ -12,7 +12,7 @@ const Results = ({ results }) => {
       ))}
       <button
         onClick={() => window.location.reload()}
-        className="mt-6 bg-green-600 text-white py-2 px-4 rounded-lg hover:bg-green-700"
+        className="mt-6 bg-purple-600 text-white py-2 px-4 rounded-lg hover:bg-purple-700"
       >
         Refazer Quiz
       </button>

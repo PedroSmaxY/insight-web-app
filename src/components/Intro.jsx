@@ -21,7 +21,7 @@ const Intro = ({ onStart }) => {
       </p>
       <button
         onClick={onStart}
-        className="bg-green-600 text-white py-2 px-4 rounded-lg hover:bg-green-700"
+        className="bg-purple-600 text-white py-2 px-4 rounded-lg hover:bg-purple-700"
       >
         Iniciar Quiz
       </button>
