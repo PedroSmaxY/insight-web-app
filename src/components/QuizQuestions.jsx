@@ -123,7 +123,7 @@ const QuizQuestions = ({ onQuizComplete }) => {
         estabilidade: "Estabilidade baixa",
         conformidade: "Conformidade moderada",
       };
-      onQuizComplete(fallbackResults);
+      onQuizComplete(fallbackResults, true);
     } else {
       try {
         const response = await axios.post(
@@ -135,7 +135,7 @@ const QuizQuestions = ({ onQuizComplete }) => {
             conformidade: answers.slice(15, 20),
           }
         );
-        onQuizComplete(response.data);
+        onQuizComplete(response.data, false);
       } catch (error) {
         console.error("Erro ao enviar respostas:", error);
       }
@@ -147,7 +147,8 @@ const QuizQuestions = ({ onQuizComplete }) => {
       {useInternalQuestions && (
         <div className="mb-4 p-3 bg-yellow-100 border-l-4 border-yellow-500 text-yellow-700">
           <p>
-            Conectando ao modo offline: usando perguntas e respostas internas.
+            Você está no modo offline. As perguntas e respostas exibidas são
+            apenas de demonstração.
           </p>
         </div>
       )}
@@ -215,7 +216,9 @@ const QuizQuestions = ({ onQuizComplete }) => {
             answeredQuestions === 20 ? "bg-purple-700 hover:bg-purple-800" : ""
           }`}
         >
-          {answeredQuestions != 20 ? "Próxima Pergunta" : "Finalizar Quiz"}
+          {perfil === "conformidade" && currentQuestion === 5
+            ? "Finalizar Quiz"
+            : "Próxima Pergunta"}
         </button>
       </div>
     </div>
