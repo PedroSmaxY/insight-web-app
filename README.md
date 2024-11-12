@@ -20,6 +20,8 @@ This work was done for the Expert Systems course at college in the 4th semester.
   - [Screenshots](#screenshots)
     - [Intro Page](#intro-page)
     - [Quiz Page](#quiz-page)
+      - [Online Quiz](#online-quiz)
+      - [Offline Quiz](#offline-quiz)
     - [Results Page](#results-page)
   - [Technologies Used](#technologies-used)
   - [Prerequisites](#prerequisites)
@@ -40,15 +42,23 @@ This work was done for the Expert Systems course at college in the 4th semester.
 
 ### Intro Page
 
-![Intro Page](https://github.com/PedroSmaxY/insight-web-app/blob/main/assets/intro-page.png)
+![Intro Page](https://github.com/user-attachments/assets/9773bf97-5668-4361-9033-c0dbaf99c09d)
+
 
 ### Quiz Page
 
-![Quiz Page](https://github.com/PedroSmaxY/insight-web-app/blob/main/assets/quiz-page.png)
+#### Online Quiz
+
+![Online Quiz Page](https://github.com/user-attachments/assets/117ed94a-3b19-417a-8bce-2c4d4adea8e1)
+
+#### Offline Quiz
+
+![Offline Quiz Page](https://github.com/user-attachments/assets/37ffecd4-1463-4e0c-996f-200861322c39)
 
 ### Results Page
 
-![Results Page](https://github.com/PedroSmaxY/insight-web-app/blob/main/assets/results-page.png)
+![Results Page](https://github.com/user-attachments/assets/323404bf-bba4-43f8-a31c-68a589d4880a)
+
 
 ## Technologies Used
 
