@@ -7,11 +7,13 @@ const Quiz = () => {
   const [showIntro, setShowIntro] = useState(true);
   const [showResults, setShowResults] = useState(false);
   const [results, setResults] = useState({});
+  const [isDemo, setIsDemo] = useState(false);
 
   const handleShowQuiz = () => setShowIntro(false);
 
-  const handleShowResults = (finalResults) => {
+  const handleShowResults = (finalResults, demoMode) => {
     setResults(finalResults);
+    setIsDemo(demoMode);
     setShowResults(true);
   };
 
@@ -21,7 +23,7 @@ const Quiz = () => {
       {!showIntro && !showResults && (
         <QuizQuestions onQuizComplete={handleShowResults} />
       )}
-      {showResults && <Results results={results} />}
+      {showResults && <Results results={results} isDemo={isDemo} />}
     </div>
   );
 };
