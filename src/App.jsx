@@ -12,7 +12,7 @@ const App = () => {
       <Quiz />
       <footer className="bg-purple-500 text-white py-4 text-center mt-auto">
         <p className="text-sm text-gray-200">
-          Desenvolvido por Lucas Amaral, Pedro Novais, Pedro Carvalho, Victor
+          Desenvolvido por Lucas Amaral, Pedro Novais, Pedro Carvalho & Victor
           Jacques © 2024
         </p>
       </footer>
