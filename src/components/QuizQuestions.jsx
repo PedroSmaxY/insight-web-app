@@ -88,6 +88,29 @@ const QuizQuestions = ({ onQuizComplete }) => {
     }
   };
 
+  const handlePreviousQuestion = () => {
+    if (currentQuestion > 1) {
+      setCurrentQuestion((prev) => prev - 1);
+      setSelectedAnswer(answers[answers.length - 1] || null);
+      setAnswers((prevAnswers) => prevAnswers.slice(0, -1));
+    } else if (perfil === "influencia") {
+      setPerfil("dominancia");
+      setCurrentQuestion(5);
+      setSelectedAnswer(answers[4] || null);
+      setAnswers((prevAnswers) => prevAnswers.slice(0, -1));
+    } else if (perfil === "estabilidade") {
+      setPerfil("influencia");
+      setCurrentQuestion(5);
+      setSelectedAnswer(answers[9] || null);
+      setAnswers((prevAnswers) => prevAnswers.slice(0, -1));
+    } else if (perfil === "conformidade") {
+      setPerfil("estabilidade");
+      setCurrentQuestion(5);
+      setSelectedAnswer(answers[14] || null);
+      setAnswers((prevAnswers) => prevAnswers.slice(0, -1));
+    }
+  };
+
   const submitAnswers = async () => {
     if (useInternalQuestions) {
       const fallbackResults = {
@@ -160,17 +183,26 @@ const QuizQuestions = ({ onQuizComplete }) => {
           </li>
         ))}
       </ul>
-      <button
-        onClick={handleNextQuestion}
-        disabled={!selectedAnswer}
-        className={`w-full py-2 px-4 rounded-lg text-white  ${
-          selectedAnswer
-            ? "bg-purple-600 hover:bg-purple-700"
-            : "bg-gray-300 cursor-not-allowed"
-        }`}
-      >
-        Próxima Pergunta
-      </button>
+      <div className="flex justify-between">
+        <button
+          onClick={handlePreviousQuestion}
+          disabled={perfil === "dominancia" && currentQuestion === 1}
+          className="py-2 px-4 rounded-lg text-white bg-purple-600 hover:bg-purple-700 disabled:opacity-50"
+        >
+          Voltar
+        </button>
+        <button
+          onClick={handleNextQuestion}
+          disabled={!selectedAnswer}
+          className={`py-2 px-4 rounded-lg text-white ${
+            selectedAnswer
+              ? "bg-purple-600 hover:bg-purple-700"
+              : "bg-gray-300 cursor-not-allowed"
+          }`}
+        >
+          Próxima Pergunta
+        </button>
+      </div>
     </div>
   );
 };
