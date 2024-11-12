@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 
 const Results = ({ results }) => {
   return (
-    <div className="results-container bg-white shadow-lg rounded-lg max-w-2xl w-full mx-auto p-8 text-center">
+    <div className="results-container bg-white shadow-md rounded-xl max-w-2xl w-full mx-auto p-8 text-center">
       <h2 className="text-2xl font-semibold mb-4">Seu Resultado</h2>
       {Object.keys(results).map((perfil) => (
         <p key={perfil} className="text-lg">
