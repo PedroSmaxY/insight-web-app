@@ -6,7 +6,7 @@ const Intro = ({ onStart }) => {
       <h2 className="text-2xl font-semibold mb-4">
         &#10024; Bem-vindo ao Insight Web App &#10024;
       </h2>
-      <p className="text-lg mb-6 text-justify">
+      <p className="text-lg mb-6">
         Este quiz foi projetado para ajudar você a entender melhor suas
         tendências e características pessoais. Responda a uma série de perguntas
         simples e receba um diagnóstico com base em seu perfil de personalidade.
