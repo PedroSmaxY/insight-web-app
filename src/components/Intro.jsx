@@ -13,7 +13,7 @@ const Intro = ({ onStart }) => {
       </p>
       <p className="text-sm text-gray-600 mb-6">
         Desenvolvido por: Lucas Amaral, Pedro Henrique da Silva Novais, Pedro
-        Henrique Nascimento Carvalho, Victor Jacques.
+        Henrique Nascimento Carvalho e Victor Jacques.
       </p>
       <p className="text-sm text-gray-600 mb-6">
         Projeto desenvolvido para atender as exigências da matéria de Sistemas
